@@ -1,3 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>模拟用户登录功能</title>
+  </head>
+  <body>
+    <p>
+      <label>账号：</label>
+      <input type="username" id="username" placeholder="请输入您的账号"/>
+    </p>
+    <p>
+      <label>密码：</label>
+      <input type="password" id="password" placeholder="请输入您的密码"/>
+    </p>
+    <button onclick="showLoginResult()">登录</button>
+    <script>
 function isLoginSuccess(username, password) {
   return username === "123" && password === "123";
 }
@@ -28,3 +45,7 @@ function removeTips() {
     tipPara.parentNode.removeChild(tipPara);
   }
 }
+    </script>
+  </body>
+</html>
+
